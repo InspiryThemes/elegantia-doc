@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Elegantia Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Style Sheet-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" >
+
+</head>
+<body>
+<div class="container-fluid main-container">
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-4 sidebar-wrapper">
+
+            <div class="sidebar-inner-wrapper">
+
+                <div class="title-area">
+                    <h1 class="site-title">Elegantia</h1>
+                    <p class="site-description">By <a target="_blank" href="http://themeforest.net/user/InspiryThemes">Inspiry Themes</a></p>
+                </div>
+
+                <nav class="nav-main" id="nav">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#" class="menu-item">
+                    <span class="main-menu-item">
+                        <i class="glyphicon glyphicon-cog"></i>Basic Setup<span class="glyphicon glyphicon-chevron-right"></span>
+                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#introduction">Introduction</a></li>
+                                <li><a class="sub-menu-item" href="#install-theme">Install Theme</a></li>
+                                <li><a class="sub-menu-item" href="#import-xml">Import Demo Contents</a></li>
+                                <li><a class="sub-menu-item" href="#configure-menus">Configure Menus</a></li>
+                                <li><a class="sub-menu-item" href="#configure-reading">Configure Reading Settings</a></li>
+                                <li><a class="sub-menu-item" href="#configure-permalinks">Configure Permalink Settings</a></li>
+                                <li><a class="sub-menu-item" href="#log-and-favicon">Logo and Favicon</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                    <span class="main-menu-item">
+                        <i class="glyphicon glyphicon-home"></i>Setup Home<span class="glyphicon glyphicon-chevron-right"></span>
+                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#home-prerequisite">Home - Prerequisite</a></li>
+                                <li><a class="sub-menu-item" href="#home-default-slider"> Home - Slider</a></li>
+                                <li><a class="sub-menu-item" href="#home-theme-options">Home - Sections</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                    <span class="main-menu-item">
+                        <i class="glyphicon glyphicon-file"></i>Create Pages<span class="glyphicon glyphicon-chevron-right"></span>
+                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#food-menu-page">Food Menu Page</a></li>
+                                <li><a class="sub-menu-item" href="#gallery-page">Gallery Page</a></li>
+                                <li><a class="sub-menu-item" href="#faqs-page">FAQs Page</a></li>
+                                <li><a class="sub-menu-item" href="#event-page">Event Page</a></li>
+                                <li><a class="sub-menu-item" href="#team-page">Team Page</a></li>
+                                <li><a class="sub-menu-item" href="#reservation-page">Reservation Page</a></li>
+                                <li><a class="sub-menu-item" href="#contact-page">Contact Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                    <span class="main-menu-item">
+                        <i class="glyphicon glyphicon-pencil"></i>Add Contents<span class="glyphicon glyphicon-chevron-right"></span>
+                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#add-new-menu-item">Add New Food Menu Item</a></li>
+                                <li><a class="sub-menu-item" href="#add-new-gallery-item">Add New Gallery Item</a></li>
+                                <li><a class="sub-menu-item" href="#add-faq">Add FAQ</a></li>
+                                <li><a class="sub-menu-item" href="#add-event">Add Event</a></li>
+                                <li><a class="sub-menu-item" href="#add-team-member">Add Team Member</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                    <span class="main-menu-item">
+                        <i class="glyphicon glyphicon-cog"></i>Theme Widgets<span class="glyphicon glyphicon-chevron-right"></span>
+                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#featured-menu-item-widget">Featured Menu Items Widget</a></li>
+                                <li><a class="sub-menu-item" href="#menu-types-list-widget">Menu Types List Widget</a></li>
+                                <li><a class="sub-menu-item" href="#recent-post-with-thumbnail-widget">Recent Posts With Thumbnail Widget</a></li>
+                                <li><a class="sub-menu-item" href="#upcoming-events-widget">Upcoming Events</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-leaf"></i>Other Features<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#shortcodes">Shortcodes</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-edit"></i>Modify Theme<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item active" href="#modify-styles">Modify Styles</a></li>
+                                <li><a class="sub-menu-item" href="#hire-customization">Hire Customization Services</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div><!-- inner wrapper -->
+        </div><!-- sidebar wrapper -->
+
+
+        <div class="col-lg-9 col-md-8 col-sm-7 main-content-wrapper">
+
+            <main class="page-content">
+
+                <article class="hentry" id="introduction">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Introduction</h1>
+                        <p>This documentation is last updated on 10th July 2017.</p>
+                        <p>Thank you for purchasing Elegantia  WordPress Theme . If you have any question that is beyond the scope of this documentation, Please feel free to ask for help at our <a href="http://support.inspirythemes.com/" target="_blank">Our Support Site</a>.</p>
+                        <p class="bg-warning text-warning">
+                            <strong>Disclaimer:</strong><br/> We offer limited support for theme customers. We only provide support for our themes and their core features. We cannot guarantee our themes will work properly with all third party plugins and server environments. If you plan on adding numerous plugins to this theme then please note, We cannot facilitate support for any conflicts that might arise with this theme's default functionality. The Elegantia  WordPress theme is presented as it is.
+                        </p>
+                        <h4>Themeforest Item Purchase Code to Signup on Support Site</h4>
+                        <p>Please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/how-to-get-themeforest-item-purchase-code/">this knowledge base article</a> to learn about how to get item purchase code from themeforest to signup on our support site.</p>
+
+                        <h4>Updating WordPress Theme</h4>
+                        <p>If this is a theme update and you want to apply it on your existing installation then please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/better-way-to-update-wordpress-theme/">this knowledge base article</a> to learn about a better way to update your theme</p>
+
+                        <p><strong>If you like this theme, Please support us by rating this theme with 5 stars (<a data-lightbox="how-to-rate-theme" href="how-to-rate-theme.png" >How to rate?</a>)</strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="install-theme">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Install Theme</h1>
+                        <p>In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, please see the WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
+                        <p>Once you have a working of version of WordPress, you need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">All Files and Documentation</a> from themeforest and extract the downloaded zip to get various files including <strong>elegantia-theme.zip</strong>.</p>
+
+                        <h4>Install Theme Via WordPress Dashboard</h4>
+
+                        <ol>
+                            <li>Go to 'Appearance &gt; Themes' section</li>
+                            <li>Click 'Add New' and select the 'Upload Theme' option </li>
+                            <li>Choose the <strong>elegantia-theme.zip</strong> file and press 'Install Now'</li>
+                            <li>Once the theme is uploaded you need to activate it.</li>
+                        </ol>
+                        <img src="assets/elegantia/install/1.png" alt=""/>
+                        <p class="bg-info text-info">
+                            if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.
+                        </p>
+
+                        <h3>Install Theme Via FTP</h3>
+                        <ol>
+                            <li>Access your hosting server using an ftp client like <a target="_blank" href="https://filezilla-project.org/">FileZilla</a></li>
+                            <li>Go to the 'wp-content/themes' folder of your WordPress installation</li>
+                            <li>Extract the <strong>elegantia-theme.zip</strong> file and put the <strong>elegantia-theme</strong> folder in 'wp-content/themes/' folder</li>
+                            <li>Go to 'WordPress Dashboard &gt; Appearance &gt; Themes' section to activate the theme</li>
+                        </ol>
+
+                        <h3>Install Child Theme</h3>
+                        <p>It is better to use child theme as if you need to modify anything you modify in child theme only. This way you can easily update your parent theme whenever new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
+                        <p>To install child theme, you need to upload the <strong>elegantia-child.zip</strong> and activate it in the same way as you uploaded and activated the parent theme's <strong>elegantia-theme.zip</strong>.</p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="import-xml">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Import XML for Demo Contents</h1>
+                        <p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest and use the XML within it.
+                            Go to the <strong>WordPress Admin &gt; Tools &gt; Import </strong> and click <strong>WordPress</strong> as displayed in image below.</p>
+                        <img src="assets/elegantia/install/2.png" alt=""/>
+                        <p>At 1st time you need to install WordPress importer plugin</p>
+                        <img src="assets/elegantia/install/3.png" alt=""/>
+                        <p>Once installed you need to activate the plugin and run the importer.</p>
+                        <img src="assets/elegantia/install/4.png" alt=""/>
+                        <p>Select the XML file from <strong>Import XML</strong> folder in unzipped package that you have downloaded from themeforest.</p>
+                        <img src="assets/elegantia/install/5.png" alt=""/>
+                        <p>
+                            After importing XML file.
+                        </p>
+                        <ol>
+                            <li>Assign posts to an existing author.</li>
+                            <li>Mark the checkbox to download and import file attachments</li>
+                            <li>Click 'Submit' button</li>
+                        </ol>
+
+                        <img src="assets/elegantia/install/6.png" alt=""/>
+                        <p>After that is done, you will have bunch of posts, pages, properties and other contents as on the theme demo.</p>
+                        <img src="assets/elegantia/install/7.png" alt=""/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-menus">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Configure Menus</h1>
+                        <p class="bg-info text-info">
+                            You can create your own menu and assign it to theme locations OR you can modify imported menu to your needs. We are using the imported menu in this documentation.
+                        </p>
+                        <p>Navigate to <strong>Appearance &gt; Menus</strong> and use the Already Imported Menus from XML and assign those to theme locations</p>
+                        <h3>Footer Menu</h3>
+                        <p>Select "Footer Menu" and look for the <strong>Menu Settings</strong> section below menu items. Now assign the selected menu to <strong>Footer Menu</strong> in <strong>Theme Locations</strong>. After that save the menu. As pointed in screenshot below.</p>
+                        <img src="assets/elegantia/install/8.png" alt=""/>
+                        <h3>Header Menu</h3>
+                        <p>Select "Left Main Menu" and look for the <strong>Menu Settings</strong> section below menu items. Now assign the selected menu to <strong>Left Side Main Menu</strong> in <strong>Theme Locations</strong>. After that save the menu. As pointed in screenshot below.</p>
+                        <img src="assets/elegantia/install/9.png" alt=""/>
+                        <p>Select "Right Main Menu" and look for the <strong>Menu Settings</strong> section below menu items. Now assign the selected menu to <strong>Right Side Main Menu</strong> in <strong>Theme Locations</strong>. After that save the menu. As pointed in screenshot below.</p>
+                        <img src="assets/elegantia/install/10.png" alt=""/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-reading">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Configure Reading Settings</h1>
+                        <p>I am assuming that you have imported the XML successfully and you have Home page and Blog page available for use. If this is not the case then simply create a new page using <strong>Homepage Template</strong> and name it as Home after that create another page using default template and name it as Blog.</p>
+                        <p>To configure reading settings you need to visit <strong>WordPress Admin &gt; Settings &gt; Reading</strong> and choose that front page displays as static page. Then select <strong>Home as Front Page</strong> and <strong>Blog as Posts Page</strong> and save the settings. As, displayed in screen shot below.</p>
+                        <img src="assets/elegantia/install/11.png" alt=""/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-permalinks">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Configure Permalinks Settings</h1>
+                        <p> To configure permalinks settings visit <strong>WordPress Admin &gt; Settings &gt; Permalinks</strong> and configure it as displayed in images below.</p>
+                        <img src="assets/elegantia/install/12.png" alt=""/>
+                        <p>Choose the settings for Posts and Pages</p>
+                        <img src="assets/elegantia/install/12-1.png" alt=""/>
+                        <p><strong>Save Changes</strong> after selection.</p>
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="log-and-favicon">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Logo and Favicon Setup</h1>
+                        <p> To upload logo and favicon visit <strong>WordPress Admin &gt; Appearance &gt; Theme Options &gt; Header </strong> as displayed in screen shot below.</p>
+                        <img src="assets/elegantia/log-and-favicon.png" alt=""/>
+                        <p><strong>Save Changes</strong> after uploading.</p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="home-prerequisite">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Home - Prerequisite</h1>
+                        <p class="bg-info text-info">
+                            In case of imported XML the home page is already created and you do not need to follow this section. Otherwise you need to create a new home page.
+                        </p>
+                        <p>To create new Home page you need to create a new page,
+                            Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;Home&quot; yet you do not need to include any contents for now.
+                            Select the “Homepage Template” as template from the Page Attributes section, as displayed in screen shot below and click <strong>“Publish”</strong>.</p>
+                        <img src="assets/elegantia/pages/1.png" alt=""/>
+                        <p>
+                            After that consult <strong>Basic Setup &gt; Configure Read Settings</strong> in this documentation and configure it as Front Page.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="home-default-slider">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Set Up Default Slider</h1>
+                        <p>To set up default slider visit <strong>WordPress Admin &gt; Appearance &gt; Theme Options &gt; Slider </strong> and configure your slider images.</p>
+                        <p>This theme provides fullwidth flexible image slider and demo of this theme uses images with 2000px Width and 800px Height. So, it is recommended that you use the same size or even bigger size with same width and height ratio. So, that your site looks good even on very big screens.</p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="home-theme-options">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Home - Sections</h1>
+                        <p> To configure homepage sections visit <strong>WordPress Admin &gt; Appearance &gt; Theme Options &gt; Home </strong> as displayed in screen shot below.</p>
+                        <img src="assets/elegantia/home-sections.png" alt=""/>
+                        <p>Your Home Page’s basic settings are done now. you can further customize things according to your requirements.</p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="food-menu-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Food Menu Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/2.png" alt="">
+                            </li>
+                            <li>Select <strong>Our Menu Template</strong> in page attributes meta box.
+                                <img src="assets/elegantia/pages/3.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="gallery-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Portfolio Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/4.png" alt="">
+                            </li>
+                            <li>Select the appropriate page template for gallery. There are 3 templates for gallery page.
+                                <ol>
+                                    <li>Two Columns Gallery</li>
+                                    <li>Three Columns Gallery</li>
+                                    <li>Four Columns Gallery</li>
+                                </ol>
+                                <img src="assets/elegantia/pages/5.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="faqs-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add FAQs Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/6.png" alt="">
+                            </li>
+                            <li>
+                                Provide some text contents if you want to
+                                <img src="assets/elegantia/pages/7.png" alt="">
+                            </li>
+                            <li>Select the "FAQs Template" for FAQs page.
+                                <img class="light-border" src="assets/elegantia/pages/8.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="event-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Events Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/9.png" alt="">
+                            </li>
+                            <li>Select the appropriate page template for event. There are 3 templates for event page.
+                                <ol>
+                                    <li>All Events</li>
+                                    <li>All Past Events</li>
+                                    <li>All Upcoming Events</li>
+                                </ol>
+                                <img src="assets/elegantia/pages/10.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="team-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Team Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/11.png" alt="">
+                            </li>
+                            <li>After that you need to assign Team Template as Template from Page Attributes meta box.
+                                <img src="assets/elegantia/pages/12.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="reservation-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Reservation Page</h1>
+                        <p>Reservation page text content will come from page that you created and Reservation form will be added below the contents as given in theme demo.</p>
+                        <p class="bg-info text-info">
+                            There is a section in Theme Options <strong> Apperance &gt; Theme Options &gt; Reservation</strong> where you can change reservation form heading, text below heading and target email address.
+                        </p>
+                        <p>Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong></p>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/13.png" alt="">
+                            </li>
+                            <li>Assign Reservation Template as Template from Page Attributes meta box.
+                                <img src="assets/elegantia/pages/14.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="contact-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Contact Page</h1>
+                        <p>Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong></p>
+                        <ol>
+                            <li>Provide the page title
+                                <img src="assets/elegantia/pages/15.png" alt="">
+                            </li>
+                            <li>Assign Contact Us Template as Template from Page Attributes meta box.
+                                <img src="assets/elegantia/pages/16.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+
+                        <p>Contact page text content will come from page that you created and Contact Address, Map and form will be added below the contents as given in theme demo.</p>
+                        <p class="bg-info text-info">
+                            There is a section in Theme Options <strong> Apperance &gt; Theme Options &gt; Contact</strong> where you can change various things related to contact page. As displayed in image below.
+                        </p>
+                        <p>You can find your Latitude and Longitude from following Website <a href="http://itouchmap.com/latlong.html" target="_blank">http://itouchmap.com/latlong.html</a></p>
+
+                        <img src="assets/elegantia/pages/17.png" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="add-new-menu-item">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add New Food Menu Item</h1>
+                        <p>Food Menu page will display food menu items and to add your own food menu item you need to go to <strong>WordPress Admin &gt; Food Menu &gt; Add New</strong> and add your food menu item as displayed in image below.</p>
+                        <p class="bg-info text-info">
+                            Make sure to use featured image with minimum width of 548px and minimum height of 350px.<br>
+                            Also, provide proper price and mark the item featured if you want to display it on homepage.
+                        </p>
+                        <img src="assets/elegantia/contents/1.png" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="add-new-gallery-item">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add New Gallery Item</h1>
+                        <p>To add new gallery item you need to go to <strong>WordPress Admin &gt; Gallery Items  &gt; Add New</strong> and provide gallery item image and related details as displayed in image below.</p>
+                        <img src="assets/elegantia/contents/2.png" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="add-faq">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add FAQ</h1>
+
+                        Go to <strong>WordPress Admin &gt; FAQs &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the question text in title field
+                                <img src="assets/elegantia/contents/3.png" alt="">
+                            </li>
+                            <li>Provide the Answer text as contents.
+                                <img src="assets/elegantia/contents/4.png" alt="">
+                            </li>
+                            <li><strong>Publish</strong> the FAQ once it is ready.</li>
+                        </ol>
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="add-event">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add New Event</h1>
+                        <p>To create new event you need to go to <strong>WordPress Admin &gt; Events &gt; Add New</strong> and provide your event details as displayed in image below.</p>
+                        <img src="assets/elegantia/contents/5.png" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="add-team-member">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add New Team Member</h1>
+                        <p>To add new team member you need to go to <strong>WordPress Admin &gt; Team Members &gt; Add New</strong> and provide your team member information and picture as displayed in image below.</p>
+                        <p class="bg-info text-info">
+                           Featured image width for Special Team Member is 310px and for Standard Team Member is 170px.
+                            Height is flexible for both sizes.
+                        </p>
+                        <img src="assets/elegantia/contents/6.png" alt="">
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="featured-menu-item-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Featured Menu Items Widget</h1>
+                        <p>Featured Menu Items Widget displays food menu items those are marked featured during the time of creation. Its admin side looks like this.</p>
+                        <img src="assets/elegantia/widgets/1.png" alt="">
+                        <p>The user/visitor side looks like this</p>
+                        <img src="assets/elegantia/widgets/2.png" alt="">
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="menu-types-list-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Menu Types List Widget</h1>
+                        <p>This widget displays list of Menu Types. its admin side looks like this image give below.</p>
+                        <img src="assets/elegantia/widgets/3.png" alt="">
+                        <p>The user/visitor side looks like this</p>
+                        <img src="assets/elegantia/widgets/4.png" alt="">
+                    </div>
+                </article>
+
+
+                <article class="hentry" id="recent-post-with-thumbnail-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Recent Posts With Thumbnail Widget</h1>
+                        <p>This widget displays recent blog posts with thumbnails. its admin side looks like this image below.</p>
+                        <img src="assets/elegantia/widgets/5.png" alt="">
+                        <p>The user/visitor side looks like this</p>
+                        <img src="assets/elegantia/widgets/6.png" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="upcoming-events-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Upcoming Events</h1>
+                        <p>This widget displays list of upcoming events. its admin side looks like this image below.</p>
+                        <img src="assets/elegantia/widgets/7.png" alt="">
+                        <p>The user/visitor side looks like this</p>
+                        <img src="assets/elegantia/widgets/8.png" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="shortcodes">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Shortcodes</h1>
+                        <p>The theme comes pre-packed with a number of short codes allowing you to add styled content to your site with little effort.</p>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Headings</h3>
+                                <pre>[title_heading]Columns and Typography[/title_heading]</pre>
+                                <img class="light-border" src="assets/elegantia/shortcodes/1.png" alt="">
+                                <p>Heading as on <a href="http://elegantia.inspirythemes.biz/fullwidth/" target="_blank">Demo Fullwidth Page</a></p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <pre>[page_title]Welcome to Elegantia[/page_title]</pre>
+                                <img class="light-border" src="assets/elegantia/shortcodes/2.png" alt="">
+                                <p>Centered Heading as on <a href="http://elegantia.inspirythemes.biz/" target="_blank">Demo Homepage</a></p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Separator</h3>
+                                <pre>[separator]</pre>
+                                <img class="light-border" src="assets/elegantia/shortcodes/3.png" alt="">
+                                <p>Star separator as on <a href="http://elegantia.inspirythemes.biz/fullwidth/" target="_blank">Demo Fullwidth Page</a></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>jQuery Accordion</h3>
+                                <p>jQuery Accordion shortcode creates an accordion. Its usage example is given below</p>
+                                <pre>[accordion]
+[accor_block title="First Accordion Item"]Some Contents[/accor_block]
+[accor_block title="Second Accordion Item"]Some Contents[/accor_block]
+[accor_block title="Third Accordion Item"]Some Contents[/accor_block]
+[/accordion]</pre>
+                                <img class="light-border" src="assets/elegantia/shortcodes/4.png" alt="">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>jQuery Toggles</h3>
+                                <p>Its usage example is given below</p>
+                                <pre>[toggles]
+[toggle_block title="First Toggle Item"]Some Contents[/toggle_block]
+[toggle_block title="Second Toggle Item"]Some Contents[/toggle_block]
+[toggle_block title="Third Toggle Item"]Some Contents[/toggle_block]
+[/toggles]</pre>
+                                <img class="light-border" src="assets/elegantia/shortcodes/5.png" alt="">
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Message Boxes</h3>
+                                <p>We have four different types of message boxes in this theme. Usage is mentioned below</p>
+                                <pre>[error]Your Error Message Here[/error]
+[success]Your Success Message Here[/success]
+[info]Your Information Message Here[/info]
+[notice]Your Notice Message Here[/notice]</pre>
+                                <img class="light-border" src="assets/elegantia/shortcodes/6.png" alt="">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Columns</h3>
+                                <p>Columns short code is easy way to make columns in your page or post. All short codes related to columns and usage of these codes is mentioned below</p>
+                                <p>
+                                <pre>[columns][/columns]
+[one_half][/one_half]
+[one_third][/one_third]
+[two_third][/two_third]
+[one_fourth][/one_fourth]
+[three_fourth][/three_fourth]</pre></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <strong>2 Columns Shortcode Example</strong>
+
+                                <img class="light-border" src="assets/elegantia/shortcodes/7-1.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <strong>3 Columns Shortcode Example</strong>
+
+                                <img class="light-border" src="assets/elegantia/shortcodes/7-2.png" alt="">
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                            <div class="col-md-6">
+                                <strong>4 Columns Shortcode Example</strong>
+
+                                <img class="light-border" src="assets/elegantia/shortcodes/7.png" alt="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <strong>6 Columns Shortcode Example</strong>
+
+                                <img class="light-border" src="assets/elegantia/shortcodes/7-3.png" alt="">
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                            <div class="col-md-6">
+                                <strong>Mix Columns Shortcode Example</strong>
+                                <img class="light-border" src="assets/elegantia/shortcodes/7-4.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="hentry" id="modify-styles">
+                    <div class="entry-content">
+                        <h1 class="entry-title">How to Modify Styles</h1>
+                        There are various options available to modify styles in this theme.
+                        <ol>
+                            <li><strong>Theme Options</strong> - Go to 'Theme Options &gt; Styling' for various styling options.
+                                <img class="light-border" src="assets/elegantia/modify-theme/1.png" alt="">
+                            </li>
+                            <li><strong>Quick CSS</strong> - Go to 'Theme Options &gt; Styling &gt; Quick CSS' to write some short css.
+                                <img class="light-border" src="assets/elegantia/modify-theme/2.png" alt="">
+                            </li>
+                            <li><strong>Child Theme</strong> - It is recommended to use child theme's <strong>child-custom.css</strong> file for major css changes.</li>
+                                <img class="light-border" src="assets/elegantia/modify-theme/3.png" alt="">
+                            <li><strong>Custom CSS in Parent Theme</strong> - if you are not using child theme then 'css/custom.css' file is provided in parent theme to add major css changes.
+                               <img class="light-border" src="assets/elegantia/modify-theme/4.png" alt="">
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="hire-customization">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Hire Customization Services</h1>
+                        <p>For any customization solution you can always consider using <a target="_blank" href="https://inspirythemes.com/theme-customization/">our theme customization services</a>.</p>
+                    </div>
+                </article>
+
+            </main>
+        </div>
+    </div>
+</div><!-- site container end -->
+<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/purl.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>
