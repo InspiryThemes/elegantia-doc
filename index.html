@@ -51,7 +51,6 @@
                                 <li><a class="sub-menu-item" href="#import-xml">Import Demo Contents</a></li>
                                 <li><a class="sub-menu-item" href="#configure-menus">Configure Menus</a></li>
                                 <li><a class="sub-menu-item" href="#configure-reading">Configure Reading Settings</a></li>
-                                <li><a class="sub-menu-item" href="#configure-permalinks">Configure Permalink Settings</a></li>
                                 <li><a class="sub-menu-item" href="#log-and-favicon">Logo and Favicon</a></li>
                             </ul>
                         </li>
@@ -179,20 +178,28 @@
                         <h1 class="entry-title">Install Theme</h1>
                         <p>In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, please see the WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
                         <p>Once you have a working of version of WordPress, you need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">All Files and Documentation</a> from themeforest and extract the downloaded zip to get various files including <strong>elegantia-theme.zip</strong>.</p>
-
                         <h4>Install Theme Via WordPress Dashboard</h4>
-
                         <ol>
-                            <li>Go to 'Appearance &gt; Themes' section</li>
-                            <li>Click 'Add New' and select the 'Upload Theme' option </li>
-                            <li>Choose the <strong>elegantia-theme.zip</strong> file and press 'Install Now'</li>
-                            <li>Once the theme is uploaded you need to activate it.</li>
+                            <li>Go to <strong>'Appearance &gt; Themes'</strong> section</li>
+                            <li>Click <strong>'Add New'</strong> and select the <strong>'Upload Theme'</strong> option </li>
+                            <li>
+                                Choose the <strong>elegantia-theme.zip</strong> file and press <strong>'Install Now'</strong>
+                                <img src="assets/elegantia/install/1.png" alt=""/>
+                            </li>
+                            <li>
+                                Once the theme is uploaded you need to activate it.
+                                <img src="assets/elegantia/install/2.png" alt=""/>
+                            </li>
+                            <li>A notice will be displayed right after the activation of the theme asking you to install and activate the required plugin(s). So, go ahead and click on <strong>Begin installing plugins</strong> and make sure to also activate the plugin(s) before importing the demo content.
+                                <img class="light-border" src="assets/elegantia/install/3.png" alt="">
+                                <img class="light-border" src="assets/elegantia/install/4.png" alt="">
+                                <img class="light-border" src="assets/elegantia/install/5.png" alt="">
+                                <img class="light-border" src="assets/elegantia/install/6.png" alt="">
+                            </li>
                         </ol>
-                        <img src="assets/elegantia/install/1.png" alt=""/>
                         <p class="bg-info text-info">
                             if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.
                         </p>
-
                         <h3>Install Theme Via FTP</h3>
                         <ol>
                             <li>Access your hosting server using an ftp client like <a target="_blank" href="https://filezilla-project.org/">FileZilla</a></li>
@@ -200,7 +207,6 @@
                             <li>Extract the <strong>elegantia-theme.zip</strong> file and put the <strong>elegantia-theme</strong> folder in 'wp-content/themes/' folder</li>
                             <li>Go to 'WordPress Dashboard &gt; Appearance &gt; Themes' section to activate the theme</li>
                         </ol>
-
                         <h3>Install Child Theme</h3>
                         <p>It is better to use child theme as if you need to modify anything you modify in child theme only. This way you can easily update your parent theme whenever new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
                         <p>To install child theme, you need to upload the <strong>elegantia-child.zip</strong> and activate it in the same way as you uploaded and activated the parent theme's <strong>elegantia-theme.zip</strong>.</p>
@@ -209,28 +215,62 @@
 
                 <article class="hentry" id="import-xml">
                     <div class="entry-content">
-                        <h1 class="entry-title">Import XML for Demo Contents</h1>
-                        <p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest and use the XML within it.
-                            Go to the <strong>WordPress Admin &gt; Tools &gt; Import </strong> and click <strong>WordPress</strong> as displayed in image below.</p>
-                        <img src="assets/elegantia/install/2.png" alt=""/>
-                        <p>At 1st time you need to install WordPress importer plugin</p>
-                        <img src="assets/elegantia/install/3.png" alt=""/>
-                        <p>Once installed you need to activate the plugin and run the importer.</p>
-                        <img src="assets/elegantia/install/4.png" alt=""/>
-                        <p>Select the XML file from <strong>Import XML</strong> folder in unzipped package that you have downloaded from themeforest.</p>
-                        <img src="assets/elegantia/install/5.png" alt=""/>
-                        <p>
-                            After importing XML file.
-                        </p>
+                        <h1 class="entry-title">Import Demo Contents</h1>
+                        <p>You can follow one of these approaches.</p>
                         <ol>
-                            <li>Assign posts to an existing author.</li>
-                            <li>Mark the checkbox to download and import file attachments</li>
-                            <li>Click 'Submit' button</li>
+                            <li><strong>One Click Demo Import</strong> ( Automatic &amp; Recommended )</li>
+                            <li>Import XML <strong>Contents</strong> and Configure Settings Manually</li>
                         </ol>
-
-                        <img src="assets/elegantia/install/6.png" alt=""/>
-                        <p>After that is done, you will have bunch of posts, pages, properties and other contents as on the theme demo.</p>
-                        <img src="assets/elegantia/install/7.png" alt=""/>
+                        <hr>
+                        <h3>1. One Click Demo Import ( Automatic &amp; Recommended )</h3>
+                        <ol>
+                            <li>
+                                <p>Go to <strong>Dashboard → Appearance → Themes</strong> and click on <strong>Elegantia Import</strong> in the sub menu items.</p>
+                                <img src="assets/elegantia/install/8.png" alt=""/>
+                                <p>Click on <strong>Import Demo Data</strong> button. <strong>Wait for few minutes</strong> as the demo images are being fetched from the remote server and this process can take a couple of minutes.</p>
+                                <img src="assets/elegantia/install/9.png" alt=""/>
+                                <p>Once the import process is complete, You will receive a notice like the one displayed in the screen shot below.</p>
+                                <img src="assets/elegantia/install/10.png" alt=""/>
+                                <p>Visit your site and you will find your site working like the theme demo.</p>
+                            </li>
+                            <li>
+                                <p>Go to <strong>Settings → Permalinks</strong> and choose <strong>Post name</strong> from <strong>Common Settings</strong> and save the changes, As displayed in screen shot below.</p>
+                                <img src="assets/elegantia/install/7.png" alt=""/>
+                            </li>
+                        </ol>
+                        <hr>
+                        <h3>2. Import XML Contents and Configure Settings Manually</h3>
+                        <ol>
+                            <li>
+                                <p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest and use the XML within it. Go to the <strong>WordPress Admin &gt; Tools &gt; Import </strong> and click <strong>WordPress</strong> as displayed in image below.</p>
+                                <img src="assets/elegantia/install/11.png" alt=""/>
+                            </li>
+                            <li>
+                                <p>At 1st time you need to install WordPress importer plugin</p>
+                                <img src="assets/elegantia/install/12.png" alt=""/>
+                            </li>
+                            <li>
+                                <p>Once installed you need to activate the plugin and run the importer.</p>
+                                <img src="assets/elegantia/install/13.png" alt=""/>
+                            </li>
+                            <li>
+                                <p>Select the XML file from <strong>Import XML</strong> folder in unzipped package that you have downloaded from themeforest.</p>
+                                <img src="assets/elegantia/install/14.png" alt=""/>
+                            </li>
+                            <li>
+                                <p>After importing XML file.</p>
+                                <ol>
+                                    <li>Assign posts to an existing author.</li>
+                                    <li>Mark the checkbox to download and import file attachments</li>
+                                    <li>Click 'Submit' button</li>
+                                </ol>
+                                <img src="assets/elegantia/install/15.png" alt=""/>
+                            </li>
+                            <li>
+                                <p>After that is done, you will have bunch of posts, pages, properties and other contents as on the theme demo.</p>
+                                <img src="assets/elegantia/install/16.png" alt=""/>
+                            </li>
+                        </ol>
                     </div>
                 </article>
 
@@ -238,40 +278,31 @@
                     <div class="entry-content">
                         <h1 class="entry-title">Configure Menus</h1>
                         <p class="bg-info text-info">
-                            You can create your own menu and assign it to theme locations OR you can modify imported menu to your needs. We are using the imported menu in this documentation.
+                            In case you followed <strong>Demo Contents Import</strong> and used method 1 (One Click Demo Import), The menus settings should already be configured and you do not need to follow this section.
                         </p>
                         <p>Navigate to <strong>Appearance &gt; Menus</strong> and use the Already Imported Menus from XML and assign those to theme locations</p>
                         <h3>Footer Menu</h3>
                         <p>Select "Footer Menu" and look for the <strong>Menu Settings</strong> section below menu items. Now assign the selected menu to <strong>Footer Menu</strong> in <strong>Theme Locations</strong>. After that save the menu. As pointed in screenshot below.</p>
-                        <img src="assets/elegantia/install/8.png" alt=""/>
+                        <img src="assets/elegantia/install/17.png" alt=""/>
                         <h3>Header Menu</h3>
                         <p>Select "Left Main Menu" and look for the <strong>Menu Settings</strong> section below menu items. Now assign the selected menu to <strong>Left Side Main Menu</strong> in <strong>Theme Locations</strong>. After that save the menu. As pointed in screenshot below.</p>
-                        <img src="assets/elegantia/install/9.png" alt=""/>
+                        <img src="assets/elegantia/install/18.png" alt=""/>
                         <p>Select "Right Main Menu" and look for the <strong>Menu Settings</strong> section below menu items. Now assign the selected menu to <strong>Right Side Main Menu</strong> in <strong>Theme Locations</strong>. After that save the menu. As pointed in screenshot below.</p>
-                        <img src="assets/elegantia/install/10.png" alt=""/>
+                        <img src="assets/elegantia/install/19.png" alt=""/>
                     </div>
                 </article>
 
                 <article class="hentry" id="configure-reading">
                     <div class="entry-content">
                         <h1 class="entry-title">Configure Reading Settings</h1>
+                        <p class="bg-info text-info">
+                            In case you followed <strong>Demo Contents Import</strong> and used method 1 (One Click Demo Import), The reading settings should already be configured and you do not need to follow this section.
+                        </p>
                         <p>I am assuming that you have imported the XML successfully and you have Home page and Blog page available for use. If this is not the case then simply create a new page using <strong>Homepage Template</strong> and name it as Home after that create another page using default template and name it as Blog.</p>
                         <p>To configure reading settings you need to visit <strong>WordPress Admin &gt; Settings &gt; Reading</strong> and choose that front page displays as static page. Then select <strong>Home as Front Page</strong> and <strong>Blog as Posts Page</strong> and save the settings. As, displayed in screen shot below.</p>
-                        <img src="assets/elegantia/install/11.png" alt=""/>
+                        <img src="assets/elegantia/install/20.png" alt=""/>
                     </div>
                 </article>
-
-                <article class="hentry" id="configure-permalinks">
-                    <div class="entry-content">
-                        <h1 class="entry-title">Configure Permalinks Settings</h1>
-                        <p> To configure permalinks settings visit <strong>WordPress Admin &gt; Settings &gt; Permalinks</strong> and configure it as displayed in images below.</p>
-                        <img src="assets/elegantia/install/12.png" alt=""/>
-                        <p>Choose the settings for Posts and Pages</p>
-                        <img src="assets/elegantia/install/12-1.png" alt=""/>
-                        <p><strong>Save Changes</strong> after selection.</p>
-                    </div>
-                </article>
-
 
                 <article class="hentry" id="log-and-favicon">
                     <div class="entry-content">
@@ -381,7 +412,6 @@
                     </div>
                 </article>
 
-
                 <article class="hentry" id="event-page">
                     <div class="entry-content">
                         <h1 class="entry-title">Add Events Page</h1>
@@ -425,7 +455,6 @@
                     </div>
                 </article>
 
-
                 <article class="hentry" id="reservation-page">
                     <div class="entry-content">
                         <h1 class="entry-title">Add Reservation Page</h1>
@@ -448,7 +477,6 @@
                         </ol>
                     </div>
                 </article>
-
 
                 <article class="hentry" id="contact-page">
                     <div class="entry-content">
@@ -514,7 +542,6 @@
                     </div>
                 </article>
 
-
                 <article class="hentry" id="add-event">
                     <div class="entry-content">
                         <h1 class="entry-title">Add New Event</h1>
@@ -535,7 +562,6 @@
                     </div>
                 </article>
 
-
                 <article class="hentry" id="featured-menu-item-widget">
                     <div class="entry-content">
                         <h1 class="entry-title">Featured Menu Items Widget</h1>
@@ -546,7 +572,6 @@
                     </div>
                 </article>
 
-
                 <article class="hentry" id="menu-types-list-widget">
                     <div class="entry-content">
                         <h1 class="entry-title">Menu Types List Widget</h1>
@@ -556,7 +581,6 @@
                         <img src="assets/elegantia/widgets/4.png" alt="">
                     </div>
                 </article>
-
 
                 <article class="hentry" id="recent-post-with-thumbnail-widget">
                     <div class="entry-content">
